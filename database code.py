@@ -3,7 +3,7 @@ import sqlite3
 conn = sqlite3.connect('data.db')
 conn.text_factory = str
 curs = conn.cursor()
-
+AAAAAAAAAAAAAAAAAAAAAAAAAA
 
 insertRow = 'INSERT INTO %s SELECT * FROM CharList WHERE Name = (?)'
 deleteRow = 'DELETE FROM %s WHERE Name = (?)'

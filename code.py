@@ -88,6 +88,14 @@ class Connected(Screen):
         self.manager.transition = SlideTransition(direction="right")
         self.manager.current = 'login'
         self.manager.get_screen('login').resetForm()
+    
+    """
+    my team button
+    """
+    def myteam(self):
+        self.manager.transition = SlideTransition(direction="left")
+        self.manager.current = 'myteam'
+        self.manager.get_screen('myteam').loadForm()
 
 class MyScore(Screen):
         def backpage(self):
@@ -102,6 +110,8 @@ class Store(Screen):
             self.manager.get_screen('connected')
 
 class MyTeam(Screen):
+    def loadForm(self):
+        
     def backpage(self):
             self.manager.transition = SlideTransition(direction='right')
             self.manager.current = 'connected'
